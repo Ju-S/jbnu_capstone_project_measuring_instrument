@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_back_multi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="multi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintStart_toEndOf="@+id/button_igr_get" />
+
+    <Button
+        android:id="@+id/button_igr_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="28dp"
+        android:text="get"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/igr_freq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="true"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/igr_AC_V"
+        app:layout_constraintTop_toBottomOf="@+id/igr_AC_V"
+        tools:text="0" />
+
+    <EditText
+        android:id="@+id/igr_insul_resist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="34dp"
+        android:autoText="true"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0" />
+
+    <EditText
+        android:id="@+id/igr_igr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="true"
+        android:autofillHints=""
+        android:editable="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/igr_igo"
+        app:layout_constraintTop_toBottomOf="@+id/igr_igo"
+        tools:text="0" />
+
+    <EditText
+        android:id="@+id/igr_igo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="true"
+        android:autofillHints=""
+        android:editable="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/igr_insul_resist"
+        app:layout_constraintTop_toBottomOf="@+id/igr_insul_resist"
+        tools:text="0" />
+
+    <EditText
+        android:id="@+id/igr_load_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="true"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/igr_leak_current"
+        app:layout_constraintTop_toBottomOf="@+id/igr_leak_current"
+        tools:text="0" />
+
+    <EditText
+        android:id="@+id/igr_leak_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="true"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/igr_freq"
+        tools:text="0" />
+
+    <EditText
+        android:id="@+id/igr_AC_V"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="true"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/igr_igr"
+        app:layout_constraintTop_toBottomOf="@+id/igr_igr"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="7dp"
+        android:text="절연저항"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/igr_insul_resist"
+        app:layout_constraintEnd_toStartOf="@+id/igr_insul_resist" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Igo"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/igr_igo"
+        app:layout_constraintEnd_toStartOf="@+id/igr_igo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="16dp"
+        android:text="Igr"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/igr_igr"
+        app:layout_constraintTop_toTopOf="@+id/igr_igr" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="AC V"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/igr_AC_V"
+        app:layout_constraintEnd_toStartOf="@+id/igr_AC_V" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="7dp"
+        android:text="주파수"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/igr_freq"
+        app:layout_constraintEnd_toStartOf="@+id/igr_freq" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="16dp"
+        android:text="합성누설전류"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/igr_leak_current"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/igr_leak_current" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="7dp"
+        android:text="부하전류"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/igr_load_current"
+        app:layout_constraintEnd_toStartOf="@+id/igr_load_current" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

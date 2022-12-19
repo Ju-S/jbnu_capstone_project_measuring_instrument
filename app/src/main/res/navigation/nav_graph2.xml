@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/igrFragment"
+        android:name="com.example.measuring_instrument.IgrFragment"
+        android:label="fragment_multi"
+        tools:layout="@layout/fragment_multi" >
+        <action
+            android:id="@+id/action_igrFragment_to_multiFragment"
+            app:destination="@id/multiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.measuring_instrument.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_igrFragment"
+            app:destination="@id/igrFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_multiFragment"
+            app:destination="@id/multiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/multiFragment"
+        android:name="com.example.measuring_instrument.MultiFragment"
+        android:label="MultiFragment" >
+        <action
+            android:id="@+id/action_multiFragment_to_igrFragment"
+            app:destination="@id/igrFragment" />
+    </fragment>
+</navigation>
